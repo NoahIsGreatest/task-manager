@@ -9,11 +9,8 @@ let busy = false
 
 if (addTask) {
   addTask.addEventListener('click', () => {
-    if (busy == false) {
-        busy = true
-    } else if (busy == true) {
-        return
-    }
+    if (busy) return;
+    busy = true
     const name = document.createElement('input')
     const button = document.createElement('button')
 
@@ -75,3 +72,4 @@ if (addTask) {
   })
 
 }
+
