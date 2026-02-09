@@ -4,8 +4,16 @@ const container = document.getElementById('container')
 
 const info = document.getElementById('info')
 const Tasks = document.getElementById('tasks')
+
+let busy = false
+
 if (addTask) {
   addTask.addEventListener('click', () => {
+    if (busy == false) {
+        busy = true
+    } else if (busy == true) {
+        return
+    }
     const name = document.createElement('input')
     const button = document.createElement('button')
 
@@ -14,11 +22,11 @@ if (addTask) {
 
     info.appendChild(name)
     info.appendChild(button)
-    button.textContent = "Create Task"
+    button.textContent = "Create To-do"
     button.id = "createTask"
     
     button.addEventListener('click', () => {
-
+      busy = false
 
       let Name = name.value
       if (!Name) {
@@ -65,4 +73,5 @@ if (addTask) {
     })
 
   })
+
 }
