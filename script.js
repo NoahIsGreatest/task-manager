@@ -24,7 +24,8 @@ if (addTask) {
     
     button.addEventListener('click', () => {
       busy = false
-
+      name.remove();
+      button.remove();
       let Name = name.value
       if (!Name) {
 
@@ -72,4 +73,5 @@ if (addTask) {
   })
 
 }
+
 
