@@ -1,0 +1,96 @@
+.Delete {
+  color: white;
+  background-color: rgb(255, 65, 65);
+  border: none;
+  border-radius: 12px;
+  padding: 11px;
+  cursor: pointer;
+  margin: 3px;
+  
+}
+
+.Delete:hover {
+  background-color: rgb(255, 88, 88);;
+}
+
+
+.addTask {
+  margin: 3px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 174, 255);
+  padding: 11px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.6) 1px 3px 4px;
+  transition: 0.3s;
+}
+
+.addTask:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 3px 4px;
+  background-color: rgb(0, 200, 255);
+}
+
+
+.Task {
+  box-shadow: rgba(0, 0, 0, 0.6) 1px 3px 4px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 300px;
+  
+  
+}
+
+.Task h3 {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#name {
+  margin: 5px;
+  outline: none;
+  padding: 6px;
+  border: solid 2px rgb(0, 174, 255);;
+
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#createTask {
+  margin: 3px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 174, 255);
+  padding: 11px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.6) 1px 3px 4px;
+}
+
+#createTask:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 3px 4px;
+  background-color: rgb(0, 200, 255);
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.check {
+  accent-color: #2196F3; /* Change the checkbox color to a specific blue */
+  width: 1.5em;          /* Adjust the size */
+  height: 1.5em;
+}
+
+
+
+
